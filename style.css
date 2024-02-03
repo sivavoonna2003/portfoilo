@@ -19,6 +19,18 @@ body{
     background-size: cover;
     background-position: center;
 }
+.counter {
+    display: inline-block;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#pageviews-count,
+#visits-count {
+    font-weight: bold;
+    font-size: 24px;
+}
 .container{
     padding: 10px 10%;
 }
