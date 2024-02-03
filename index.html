@@ -117,7 +117,23 @@
             </div>
         </div>
     </section> <br><br>
+    <!--project section-->
+    <section class="section" id="projects">
+        <div class="top-header" style="text-align: center;">
+            
+            <h1>Projects</h1>
+        </div>
+    <div class="project-container">
+            <div class="project-box">
+                <a href="https://sankarmuppidi.github.io/portfolio/">portfolio</a>
+            <a href="https://github.com/sankarmuppidi/portfolio.git">github</a>
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completed</h3>
+                <label>Finished Projects</label>
+        </div></div> 
+    </section>
     <section id="contact">
+
 
         <div class="container">
             <div class="row">
@@ -164,7 +180,13 @@
                 <h2>Testimonial 3</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo metus quis.</p>
             </div>
+        </div class="video">
+       <div> <video width="400" controls>
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
+          </section>
     </section> 
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
@@ -356,7 +378,7 @@
     function showSlides() {
         let slides = document.getElementsByClassName("testimonial");
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.transform = translateX(${(i - slideIndex) * 100}%);
+            slides[i].style.transform = 'translateX(${(i - slideIndex) * 100}%)`;
         }
         slideIndex++;
         if (slideIndex >= slides.length) { slideIndex = 0; }
