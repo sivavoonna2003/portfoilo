@@ -146,14 +146,7 @@
                 </div>
             </div>
         </div>
-        <div class="counter">
-            <span id="pageviews-count">0</span>
-            <h4>Pageviews</h4>
-        </div>
-        <div class="counter">
-            <span id="visits-count">0</span>
-            <h4>Visits</h4>
-        </div>
+        <p id="visit-count">0</p>
     </section> 
 <script>
     var tablinks=document.getElementsByClassName("tab-links");
@@ -261,6 +254,21 @@
 </script>
 
 
+
+<script>
+    // Function to update and display visit count
+    function updateVisitCount() {
+      let count = localStorage.getItem('visitCount') || 0;
+      count = parseInt(count) + 1;
+      localStorage.setItem('visitCount', count);
+      document.getElementById('visit-count').textContent = count;
+    }
+
+    // Call the function on page load
+    window.onload = function() {
+      updateVisitCount();
+    };
+  </script>
 
 </body>
 </html>
